@@ -1,0 +1,49 @@
+{
+	"info": {
+		"name": "Practice Devops",
+		"_postman_id": "5e1b1762-2bde-4133-b0cf-e0aa3be23b12",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Post",
+			"description": null,
+			"item": [
+				{
+					"name": "List",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "eff91171-b1f8-490f-8c97-01988b5e615d",
+								"type": "text/javascript",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});"
+								]
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "{{DOMAIN}}/posts",
+							"host": [
+								"{{DOMAIN}}"
+							],
+							"path": [
+								"posts"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

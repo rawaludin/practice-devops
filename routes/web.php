@@ -1,5 +1,8 @@
 <?php
 
+use App\Http\Resources\PostResource;
+use App\Post;
+
 /*
 |--------------------------------------------------------------------------
 | Application Routes
@@ -16,5 +19,6 @@ $router->get('/', function () use ($router) {
 });
 
 $router->get('/posts', function () use ($router) {
-    return App\Post::all();
+    $posts = Post::paginate(10);
+    return PostResource::collection($posts);
 });

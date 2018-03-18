@@ -1,0 +1,16 @@
+{
+  "id": "5bfe4f99-6a75-4b2f-bbad-4bf554ff8b5d",
+  "name": "Practice Devops Local",
+  "values": [
+    {
+      "key": "DOMAIN",
+      "value": "http://0.0.0.0:8000",
+      "description": "",
+      "type": "text",
+      "enabled": true
+    }
+  ],
+  "_postman_variable_scope": "environment",
+  "_postman_exported_at": "2018-03-18T14:57:13.720Z",
+  "_postman_exported_using": "Postman/6.0.9"
+}
