@@ -14,3 +14,7 @@
 $router->get('/', function () use ($router) {
     return $router->app->version();
 });
+
+$router->get('/posts', function () use ($router) {
+    return App\Post::all();
+});
