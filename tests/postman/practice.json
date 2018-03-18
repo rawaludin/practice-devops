@@ -12,16 +12,28 @@
 			"item": [
 				{
 					"name": "List",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "eff91171-b1f8-490f-8c97-01988b5e615d",
+								"type": "text/javascript",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});"
+								]
+							}
+						}
+					],
 					"request": {
 						"method": "GET",
 						"header": [],
 						"body": {},
 						"url": {
-							"raw": "http://practice-devop.dev/posts",
-							"protocol": "http",
+							"raw": "{{DOMAIN}}/posts",
 							"host": [
-								"practice-devop",
-								"dev"
+								"{{DOMAIN}}"
 							],
 							"path": [
 								"posts"
