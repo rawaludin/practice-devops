@@ -1,0 +1,37 @@
+{
+	"info": {
+		"name": "Practice Devops",
+		"_postman_id": "5e1b1762-2bde-4133-b0cf-e0aa3be23b12",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Post",
+			"description": null,
+			"item": [
+				{
+					"name": "List",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://practice-devop.dev/posts",
+							"protocol": "http",
+							"host": [
+								"practice-devop",
+								"dev"
+							],
+							"path": [
+								"posts"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
